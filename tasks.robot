@@ -12,9 +12,3 @@ Printing Windows Element Tree
     Log to Console    contains ${len} elements
     #Control Window    name:"C:\\koodi\\testground"
     #Double Click    type:ListItem and name:"error-handling"
-
-# RunQuery
-#    Connect To MongoDB    127.0.0.1    27017
-#    ${QueryJSON}=    Set Variable    { $where: 'this.sharedWith == "user1" && this.email == "contact1@private.info"' }
-#    ${allResults}=    Retrieve Some MongoDB Records    test    contacts    ${QueryJSON}
-#    Log    ${allResults}
